@@ -8,12 +8,13 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="css/main.css" rel="stylesheet">
   <title>Register Page</title>
 </head>
 
 <body>
-  <div class="container">
+  <div class="main">
     <div class="form">
       <form class="form-tab" action="/register" method="POST">
         <div class="form-label">Zarejestruj się</div>
@@ -25,25 +26,25 @@
         <div class="row">
 
           <div class="col-75">
-            <input class="" type="text" id="email" name="email" placeholder="E-Mail">
+            <input class="" type="text" id="email" name="email" placeholder="E-Mail"><span id="validEmailIcon" class="glyphicon glyphicon-ok valid-icon"></span>
           </div>
         </div>
         <div class="row">
 
           <div class="col-75">
-            <input type="text" id="fname" name="name" placeholder="Imię" value="{{name}}">
+            <input type="text" id="fname" name="name" placeholder="Imię" value="{{name}}"><span id="validNameIcon" class="glyphicon glyphicon-ok valid-icon"></span>
           </div>
         </div>
         <div class="row">
 
           <div class="col-75">
-            <input type="text" id="lname" name="lastname" placeholder="Nazwisko" value="{{lastname}}">
+            <input type="text" id="lname" name="lastname" placeholder="Nazwisko" value="{{lastname}}"><span id="validLastNameIcon" class="glyphicon glyphicon-ok valid-icon"></span>
           </div>
         </div>
         <div class="row">
 
           <div class="col-75">
-            <input type="password" id="pass" name="password" placeholder="Hasło">
+            <input type="password" id="pass" name="password" placeholder="Hasło"><span id="validPasswordIcon" class="glyphicon glyphicon-ok valid-icon"></span>
           </div>
         </div>
         <div class="row">

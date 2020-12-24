@@ -6,35 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
+    
     <title>AppWeb</title>
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="main">
         <div class="header">
-            <div class="logo"><img src="/img/logo.png" alt=""></div>
+            <div class=""><span class="glyphicon glyphicon-blackboard gi-5x"></span></div>
             <div class="auth">
 
 
                 {{#if authUser.name }}
 
                 <form action="/index">
-                    <button class="login-button">APP</button>
+                    <button class="btn btn-info">APP</button>
                 </form>
                 <form action="/logout" method="POST">
-                    <button class="login-button">Wyloguj się</button>
+                    <button class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span> Wyloguj się</button>
                 </form>
 
                 {{else}}
                 <form action="/login">
-                    <button class="login-button">Zaloguj się</button>
+                    <button class="btn btn-success"><span class="glyphicon glyphicon-log-in"></span> Zaloguj się</button>
 
                 </form>
 
                 <form action="/register">
-                    <button class="register-button">Zarejestruj się</button>
+                    <button class="btn btn-primary"><span class="glyphicon glyphicon-save"></span> Zarejestruj się</button>
                 </form>
                 {{/if}}
 
